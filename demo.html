@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <style>
+        .square{
+            height:120px;
+            width:120px;
+            float:left;
+            border:1px solid gray;
+            margin-left:5px;
+            margin-bottom:5px;
+            background: blue;
+        }
+    </style>
+
+    <script>
+        for(var i = 0; i < 5; i++){
+            for(var j = 0; j < 10; j++){
+                document.write("<div class='square'></div>");
+            }
+            document.write("<div style='clear:both'></div>");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Điểm Của Em</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans flex items-center justify-center min-h-screen">
+
+    <div class="bg-[#a5a5a5] border-2 border-red-600 p-8 shadow-lg w-[600px]">
+
+        <h1 class="text-[#3b5998] text-center text-3xl font-bold mb-8 uppercase">
+            Bảng Điểm Của Em
+        </h1>
+
+        <div class="flex items-center mb-5">
+            <label for="text_1" class="w-24 text-gray-800 font-medium">Semester1:</label>
+            <input type="text" id="text_1"
+                class="flex-1 border border-gray-400 p-2 focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div class="flex items-center mb-5">
+            <label for="text_2" class="w-24 text-gray-800 font-medium">Semester2:</label>
+            <input type="text" id="text_2"
+                class="flex-1 border border-gray-400 p-2 focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div class="flex items-center mb-5">
+            <label for="select" class="w-24 text-gray-800 font-medium">Year:</label>
+            <select id="select" class="border border-gray-400 p-1 w-16 text-red-600">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class="flex items-center mb-5">
+            <label for="result" class="w-24 text-gray-800 font-medium">Summarise:</label>
+            <input type="text" id="result" readonly
+                class="flex-1 border border-gray-400 p-2 bg-gray-200 cursor-not-allowed">
+        </div>
+
+        <div id="display" class="text-red-600 text-3xl font-bold mt-6 min-h-[40px]">
+        </div>
+
+        <div class="flex justify-center gap-8 mt-10">
+            <button onclick="myFunction1()"
+                class="bg-white border border-gray-500 px-8 py-1 hover:bg-gray-100 transition-colors">
+                OK
+            </button>
+            <button onclick="myFunction2()"
+                class="bg-white border border-gray-500 px-6 py-1 hover:bg-gray-100 transition-colors">
+                Cancel
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>
