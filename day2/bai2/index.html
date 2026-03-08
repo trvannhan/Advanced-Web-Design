@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="showHome()">
+
+    <header>
+        <h1>Enjoy the good vibe</h1>
+
+        <nav>
+            <button onclick="showHome()">Trang Chủ</button>
+            <button onclick="showMen()">Thời Trang Nam</button>
+            <button onclick="showWomen()">Thời Trang Nữ</button>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Tìm sản phẩm...">
+            <button onclick="searchProduct()">Tìm</button>
+        </div>
+    </header>
+
+    <section>
+
+        <!-- Banner trang chủ -->
+        <div id="home-banner">
+            <img src="https://i.pinimg.com/1200x/c7/41/66/c74166ea2050f05afb71bcdbe9dc4b12.jpg"
+                style="width:100%; max-height:350px; object-fit:cover; border-radius:12px; margin-bottom:30px;">
+        </div>
+
+        <h2 id="title"></h2>
+
+        <div class="product-container" id="product-list"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
